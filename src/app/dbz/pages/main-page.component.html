@@ -1,0 +1,17 @@
+<h1>Hola Mundo DGBZ</h1>
+<hr>
+
+
+<div class="row">
+  <div class="col">
+
+    <app-dbz-list [characterList]="characters"
+                  (onDelete)="onDeleteCharacter($event)"></app-dbz-list>
+
+  </div>
+
+  <div class="col mx-2">
+    <app-dbz-form (onNewChacter)="onNewCharacter($event)"></app-dbz-form>
+  </div>
+
+</div>
